@@ -33,7 +33,7 @@ $(function(){
     var query = $("#search").val();
     console.log('testing query', query)
     $.ajax({
-      url : "http://api.wunderground.com/api/3dd04dd7212171a9/almanac/conditions/q/" + query + ".json?callback=jsonCallback",
+      url : "http://api.wunderground.com/api/[YOUR API KEY]/almanac/conditions/q/" + query + ".json?callback=jsonCallback",
       type: "GET",
       dataType : "jsonp",
       jsonpCallback:'callback',
