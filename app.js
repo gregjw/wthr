@@ -8,7 +8,7 @@ $(function(){
       dataType: 'jsonp',
       jsonpCallback:'callback',
       error : function(xhr, status, thrownError){
-        console.log("oh noes!", thrownError);
+        console.log("oh no!", thrownError);
       },
       success: function(data){
         $('#result').empty();
@@ -38,7 +38,7 @@ $(function(){
       dataType : "jsonp",
       jsonpCallback:'callback',
       error : function(xhr, status, thrownError){
-        console.log("oh noes!", thrownError);
+        console.log("oh no!", thrownError);
       },
       success : function(data){
         $('#weather').empty();
